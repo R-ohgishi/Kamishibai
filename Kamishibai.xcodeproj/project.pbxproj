@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655211C826B62D57004494FB /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655211C726B62D57004494FB /* NextViewController.swift */; };
 		CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */; };
 		CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */; };
 		CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032D0126ACE5AC007B0F2E /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		655211C726B62D57004494FB /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CE032CFA26ACE5AC007B0F2E /* Kamishibai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamishibai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655211C626B62CF4004494FB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				655211C726B62D57004494FB /* NextViewController.swift */,
+				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		CE032CF126ACE5AC007B0F2E = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		CE032CFC26ACE5AC007B0F2E /* Kamishibai */ = {
 			isa = PBXGroup;
 			children = (
+				655211C626B62CF4004494FB /* VC */,
 				CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */,
 				CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */,
-				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
 				CE032D0326ACE5AC007B0F2E /* Main.storyboard */,
 				CE032D0626ACE5B0007B0F2E /* Assets.xcassets */,
 				CE032D0826ACE5B0007B0F2E /* LaunchScreen.storyboard */,
@@ -140,6 +151,7 @@
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
+				655211C826B62D57004494FB /* NextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

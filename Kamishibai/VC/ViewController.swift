@@ -15,6 +15,13 @@ class ViewController: UIViewController {
     }
 //飛田変更
     
+    @IBAction func bottonAction(_ sender: Any) {
+        performSegue(withIdentifier: "nextViewSegue", sender: sender)
+    }
+    
 
+    
+
+    
 }
 
