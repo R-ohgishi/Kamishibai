@@ -20,6 +20,8 @@ class NextViewController: UIViewController {
     @IBOutlet weak var oniSegue: UIImageView!
     
     @IBOutlet weak var kinSegue: UIImageView!
+    
+    
     /*
     // MARK: - Navigation
 
