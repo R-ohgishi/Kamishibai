@@ -22,6 +22,20 @@ class NextViewController: UIViewController {
     @IBOutlet weak var kinSegue: UIImageView!
     
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        MomoViewController.isUserInteractionEnabled = true
+        MomoViewController.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    @objc func tapped(){
+            performSegue(withIdentifier: "momotaroViewSegue", sender: self)
+    }
+
     /*
     // MARK: - Navigation
 
