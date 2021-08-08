@@ -15,12 +15,7 @@ class ViewController: UIViewController {
         // hashimoto 1125
     }
 //飛田変更
-    @IBAction func buttonTouchDown(_ sender: Any) {
-    
-    }
-    
-    @IBAction func Btn(_ sender: Any) {
-    }
+
     
     @IBAction func buttonAction(_ sender: UIButton) {
         performSegue(withIdentifier: "nextViewSegue", sender: sender)

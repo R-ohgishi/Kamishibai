@@ -17,18 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-ul-Clq">
-                                <rect key="frame" x="119" y="418" width="177" height="60"/>
+                                <rect key="frame" x="107" y="692" width="177" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Touch me!"/>
                                 <connections>
-                                    <action selector="Btn:" destination="BYZ-38-t0r" eventType="touchDown" id="ifx-F8-9t1"/>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2E9-U8-ZSH"/>
-                                    <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Ka8-Ma-imN"/>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOe-Ob-hSa"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
-                                <rect key="frame" x="0.0" y="130" width="414" height="634"/>
+                                <rect key="frame" x="36" y="50" width="414" height="634"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,7 +80,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
                     <connections>
-                        <outlet property="Momotaro1View" destination="xIn-fJ-uxh" id="CeI-tP-jr4"/>
+                        <outlet property="Momotaro1View" destination="xIn-fJ-uxh" id="D1x-pt-yHz"/>
                         <segue destination="1KW-bC-Imo" kind="show" identifier="momotaro1ViewSegue" id="mYH-gj-9tT"/>
                     </connections>
                 </viewController>
@@ -135,8 +133,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="7J8-Tx-E6q"/>
                     <connections>
-                        <outlet property="Momotaro2View" destination="U3f-ag-waB" id="KGy-tJ-pLQ"/>
-                        <segue destination="fbO-Ng-dap" kind="show" identifier="kamishibaiViewSegue" id="4fV-gj-Aps"/>
+                        <outlet property="Momotaro2View" destination="U3f-ag-waB" id="rJX-z6-mDd"/>
+                        <segue destination="fbO-Ng-dap" kind="show" identifier="Momotaro2ViewSegue" id="4fV-gj-Aps"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLJ-LR-isw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

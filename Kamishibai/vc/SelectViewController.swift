@@ -9,7 +9,6 @@ import UIKit
 
 class SelectViewController: UIViewController {
 
-
     @IBOutlet weak var Momotaro1View: UIImageView!
     
     override func viewDidLoad() {
