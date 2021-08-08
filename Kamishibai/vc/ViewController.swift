@@ -14,13 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         // hashimoto 1125
     }
-//飛田変更
-    @IBAction func buttonTouchDown(_ sender: Any) {
+    //飛田変更
     
-    }
     
-    @IBAction func Btn(_ sender: Any) {
-    }
     
     @IBAction func buttonAction(_ sender: UIButton) {
         performSegue(withIdentifier: "nextViewSegue", sender: sender)
@@ -32,7 +28,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
-
+    
     
 }
 
