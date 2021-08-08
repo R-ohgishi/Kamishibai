@@ -82,6 +82,7 @@
                         <outlet property="kinSegue" destination="dQS-se-q3a" id="6JB-u4-Fnt"/>
                         <outlet property="momoSegue" destination="vdT-F8-z3c" id="bXK-rB-FW7"/>
                         <outlet property="oniSegue" destination="FvM-YQ-BBo" id="3aE-yb-KXe"/>
+                        <segue destination="mfU-SV-eLr" kind="show" identifier="momotaroViewSegue" id="8GK-w2-n5r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-C2-Yyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -134,10 +135,11 @@
                         <viewLayoutGuide key="safeArea" id="dvM-RL-DDk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ShT-lz-gZM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3g-g4-6pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="-236"/>
+            <point key="canvasLocation" x="1349" y="-243"/>
         </scene>
     </scenes>
     <resources>

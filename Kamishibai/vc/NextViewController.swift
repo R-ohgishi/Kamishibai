@@ -9,11 +9,7 @@ import UIKit
 
 class NextViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
     
     @IBOutlet weak var momoSegue: UIImageView!
     
@@ -26,8 +22,8 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MomoViewController.isUserInteractionEnabled = true
-        MomoViewController.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
+        NextViewController.isUserInteractionEnabled = true
+        NextViewController.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
         
         // Do any additional setup after loading the view.
     }
