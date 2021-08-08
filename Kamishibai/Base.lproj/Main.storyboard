@@ -17,27 +17,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-ul-Clq">
-                                <rect key="frame" x="150" y="418" width="114" height="60"/>
+                                <rect key="frame" x="119" y="418" width="177" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Touch me!"/>
+                                <connections>
+                                    <action selector="Btn:" destination="BYZ-38-t0r" eventType="touchDown" id="ifx-F8-9t1"/>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2E9-U8-ZSH"/>
+                                    <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Ka8-Ma-imN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmX-un-r8S">
-                                <rect key="frame" x="171" y="570" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="hashimoto"/>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
+                                <rect key="frame" x="0.0" y="130" width="414" height="634"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q8i-fh-F8i" secondAttribute="bottom" constant="98" id="9Ca-Wu-dpr"/>
+                            <constraint firstItem="Q8i-fh-F8i" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GgY-qg-zmR"/>
+                            <constraint firstItem="Q8i-fh-F8i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ObI-rT-q0N"/>
+                            <constraint firstItem="Q8i-fh-F8i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="oqS-ve-rr3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fmh-LV-ma8"/>
+                    <connections>
+                        <segue destination="OPU-JT-OPD" kind="show" identifier="nextViewSegue" id="aoF-29-OXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="94"/>
+            <point key="canvasLocation" x="-246.37681159420291" y="93.75"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="gTk-df-9Ez">
+            <objects>
+                <viewController id="OPU-JT-OPD" customClass="NextViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFl-X4-oub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1oK-ib-wwG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-C2-Yyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="94"/>
         </scene>
     </scenes>
     <resources>
+        <image name="nigeoni" width="371" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
