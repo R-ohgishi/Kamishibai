@@ -16,20 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-ul-Clq">
-                                <rect key="frame" x="119" y="645" width="177" height="60"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
+                                <rect key="frame" x="20" y="-20" width="374" height="791"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOP-js-MBc">
+                                <rect key="frame" x="170" y="664" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Touch me!"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="Btn:" destination="BYZ-38-t0r" eventType="touchDown" id="ifx-F8-9t1"/>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2E9-U8-ZSH"/>
-                                    <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Ka8-Ma-imN"/>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OnP-DM-7Bp"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
-                                <rect key="frame" x="20" y="17" width="374" height="791"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -42,13 +39,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="fmh-LV-ma8"/>
                     <connections>
-                        <outlet property="Btn2" destination="Q8i-fh-F8i" id="5vM-tP-JSP"/>
                         <segue destination="OPU-JT-OPD" kind="show" identifier="nextViewSegue" id="aoF-29-OXb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="94"/>
+            <point key="canvasLocation" x="-423.1884057971015" y="93.75"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="gTk-df-9Ez">

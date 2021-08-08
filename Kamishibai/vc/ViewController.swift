@@ -14,8 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         // hashimoto 1125
     }
-    //飛田変更
-    
+   
     
     
     @IBAction func buttonAction(_ sender: UIButton) {
