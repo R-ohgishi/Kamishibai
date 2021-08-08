@@ -17,10 +17,9 @@ class ViewController: UIViewController {
 //飛田変更
 
     
-    @IBAction func buttonAction(_ sender: UIButton) {
+    @IBAction func buttonAction2(_ sender:UIButton) {
         performSegue(withIdentifier: "nextViewSegue", sender: sender)
     }
-    
     
     //画面のデータ受け渡し方法(今回は#3を使っています)
     //https://qiita.com/fromage-blanc/items/3ea2dfe97d4c2d6f0646
