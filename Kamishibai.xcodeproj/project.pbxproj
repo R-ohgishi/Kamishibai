@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65ACE06526BF5D12000B1EE4 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE06426BF5D12000B1EE4 /* NaviViewController.swift */; };
+		65ACE06726BF690E000B1EE4 /* MomotaroHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE06626BF690E000B1EE4 /* MomotaroHomeViewController.swift */; };
 		CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */; };
 		CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */; };
 		CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032D0126ACE5AC007B0F2E /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65ACE06426BF5D12000B1EE4 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		65ACE06626BF690E000B1EE4 /* MomotaroHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomotaroHomeViewController.swift; sourceTree = "<group>"; };
 		CE032CFA26ACE5AC007B0F2E /* Kamishibai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamishibai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			children = (
 				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
 				CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */,
+				65ACE06426BF5D12000B1EE4 /* NaviViewController.swift */,
+				65ACE06626BF690E000B1EE4 /* MomotaroHomeViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -148,10 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ACE06726BF690E000B1EE4 /* MomotaroHomeViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
 				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
+				65ACE06526BF5D12000B1EE4 /* NaviViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
