@@ -78,6 +78,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
+                    <connections>
+                        <outlet property="kinSegue" destination="dQS-se-q3a" id="6JB-u4-Fnt"/>
+                        <outlet property="momoSegue" destination="vdT-F8-z3c" id="bXK-rB-FW7"/>
+                        <outlet property="oniSegue" destination="FvM-YQ-BBo" id="3aE-yb-KXe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-C2-Yyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,19 +111,42 @@
                     <view key="view" contentMode="scaleToFill" id="TUi-kZ-rEd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="桃太郎の世界" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y7C-SW-FK8">
+                                <rect key="frame" x="77" y="175" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="momotaro" translatesAutoresizingMaskIntoConstraints="NO" id="eth-vd-soI">
+                                <rect key="frame" x="20" y="288" width="374" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9Y-8l-EGL">
+                                <rect key="frame" x="178" y="672" width="59" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="次へ"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dvM-RL-DDk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3g-g4-6pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="-123"/>
+            <point key="canvasLocation" x="1052" y="-236"/>
         </scene>
     </scenes>
     <resources>
         <image name="momotaro" width="450" height="387"/>
         <image name="nigeoni" width="371" height="400"/>
         <image name="金太郎" width="433" height="450"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

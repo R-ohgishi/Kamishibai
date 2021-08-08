@@ -15,7 +15,11 @@ class NextViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var momoSegue: UIImageView!
+    
+    @IBOutlet weak var oniSegue: UIImageView!
+    
+    @IBOutlet weak var kinSegue: UIImageView!
     /*
     // MARK: - Navigation
 
