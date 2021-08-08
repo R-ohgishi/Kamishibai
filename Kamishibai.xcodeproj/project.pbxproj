@@ -13,6 +13,9 @@
 		CE032D0526ACE5AC007B0F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0326ACE5AC007B0F2E /* Main.storyboard */; };
 		CE032D0726ACE5B0007B0F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0626ACE5B0007B0F2E /* Assets.xcassets */; };
 		CE032D0A26ACE5B0007B0F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0826ACE5B0007B0F2E /* LaunchScreen.storyboard */; };
+		CE4E3A9F26BF5CF2004162C1 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E3A9E26BF5CF2004162C1 /* NaviViewController.swift */; };
+		CE4E3AA126BF68E8004162C1 /* MomotaroHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E3AA026BF68E8004162C1 /* MomotaroHomeViewController.swift */; };
+		CE4E3AA326BF6DF9004162C1 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E3AA226BF6DF9004162C1 /* StoryViewController.swift */; };
 		CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		CE032D0626ACE5B0007B0F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE032D0926ACE5B0007B0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE032D0B26ACE5B0007B0F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4E3A9E26BF5CF2004162C1 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		CE4E3AA026BF68E8004162C1 /* MomotaroHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomotaroHomeViewController.swift; sourceTree = "<group>"; };
+		CE4E3AA226BF6DF9004162C1 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +80,9 @@
 			children = (
 				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
 				CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */,
+				CE4E3A9E26BF5CF2004162C1 /* NaviViewController.swift */,
+				CE4E3AA026BF68E8004162C1 /* MomotaroHomeViewController.swift */,
+				CE4E3AA226BF6DF9004162C1 /* StoryViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -148,10 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E3AA126BF68E8004162C1 /* MomotaroHomeViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
 				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
+				CE4E3AA326BF6DF9004162C1 /* StoryViewController.swift in Sources */,
+				CE4E3A9F26BF5CF2004162C1 /* NaviViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
