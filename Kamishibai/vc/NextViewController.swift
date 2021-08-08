@@ -11,20 +11,8 @@ class NextViewController: UIViewController {
 
 
     
-    @IBOutlet weak var momoSegue: UIImageView!
-    
-    @IBOutlet weak var oniSegue: UIImageView!
-    
-    @IBOutlet weak var kinSegue: UIImageView!
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        NextViewController.isUserInteractionEnabled = true
-        NextViewController.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
-        
+    @IBOutlet weak var momoSegue: UIImageView! {
+
         // Do any additional setup after loading the view.
     }
     
