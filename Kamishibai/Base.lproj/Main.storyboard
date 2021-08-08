@@ -49,24 +49,20 @@
             </objects>
             <point key="canvasLocation" x="-246.37681159420291" y="93.75"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="gTk-df-9Ez">
             <objects>
-                <viewController id="OPU-JT-OPD" customClass="NextViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OPU-JT-OPD" customClass="SelectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NFl-X4-oub">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="momotaro" translatesAutoresizingMaskIntoConstraints="NO" id="xIn-fJ-uxh">
-                                <rect key="frame" x="0.0" y="168" width="200" height="224"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kintaro" translatesAutoresizingMaskIntoConstraints="NO" id="G8X-Bs-ztq">
-                                <rect key="frame" x="208" y="168" width="200" height="224"/>
+                                <rect key="frame" x="0.0" y="151" width="200" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="urashimataro" translatesAutoresizingMaskIntoConstraints="NO" id="W95-QU-MPc">
-                                <rect key="frame" x="122" y="454" width="200" height="224"/>
+                                <rect key="frame" x="31" y="564" width="200" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="おはなしをえらんでね" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbf-5m-Rrw">
@@ -76,24 +72,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kintaro" translatesAutoresizingMaskIntoConstraints="NO" id="G8X-Bs-ztq">
+                                <rect key="frame" x="208" y="354" width="200" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1oK-ib-wwG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
                     <connections>
-                        <outlet property="momotaroView" destination="xIn-fJ-uxh" id="ubE-tf-Nu2"/>
-                        <segue destination="1KW-bC-Imo" kind="show" identifier="momotaroViewSegue" id="mYH-gj-9tT"/>
+                        <outlet property="Momotaro1View" destination="xIn-fJ-uxh" id="CeI-tP-jr4"/>
+                        <segue destination="1KW-bC-Imo" kind="show" identifier="momotaro1ViewSegue" id="mYH-gj-9tT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-C2-Yyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="644.92753623188412" y="93.75"/>
         </scene>
-        <!--Momotaro Home View Controller-->
+        <!--Momotaro1 View Controller-->
         <scene sceneID="Ckb-SO-CLl">
             <objects>
-                <viewController id="1KW-bC-Imo" customClass="MomotaroHomeViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1KW-bC-Imo" customClass="Momotaro1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyA-0B-Cvz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-ip-Ss0">
-                                <rect key="frame" x="169" y="739" width="62" height="30"/>
+                                <rect key="frame" x="176" y="719" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="もんだい"/>
                             </button>
@@ -126,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ookinamomo" translatesAutoresizingMaskIntoConstraints="NO" id="U3f-ag-waB">
-                                <rect key="frame" x="112" y="777" width="191" height="75"/>
+                                <rect key="frame" x="112" y="757" width="191" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -135,7 +135,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7J8-Tx-E6q"/>
                     <connections>
-                        <outlet property="momoView" destination="U3f-ag-waB" id="lRP-pA-cGW"/>
+                        <outlet property="Momotaro2View" destination="U3f-ag-waB" id="KGy-tJ-pLQ"/>
                         <segue destination="fbO-Ng-dap" kind="show" identifier="kamishibaiViewSegue" id="4fV-gj-Aps"/>
                     </connections>
                 </viewController>
@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="1476.8115942028987" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Momotaro2 View Controller-->
         <scene sceneID="h6m-KK-Ntf">
             <objects>
-                <viewController id="fbO-Ng-dap" sceneMemberID="viewController">
+                <viewController id="fbO-Ng-dap" customClass="Momotaro2ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj8-J0-yD1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

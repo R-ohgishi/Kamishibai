@@ -7,14 +7,15 @@
 
 import UIKit
 
-class MomotaroHomeViewController: UINavigationController {
+class Momotaro1ViewController: UINavigationController {
 
-    @IBOutlet weak var momoView: UIImageView!
+
+    @IBOutlet weak var Momotaro2View: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            momoView.isUserInteractionEnabled = true
-                    momoView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
+            Momotaro2View.isUserInteractionEnabled = true
+                    Momotaro2View.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
         }
         @objc func tapped(){
             performSegue(withIdentifier: "kamishibaiViewSegue",sender: self)

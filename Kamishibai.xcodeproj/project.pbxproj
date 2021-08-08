@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6527069F26C00FAC008E6B1F /* Momotaro2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6527069E26C00FAC008E6B1F /* Momotaro2ViewController.swift */; };
 		65ACE06526BF5D12000B1EE4 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE06426BF5D12000B1EE4 /* NaviViewController.swift */; };
-		65ACE06726BF690E000B1EE4 /* MomotaroHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE06626BF690E000B1EE4 /* MomotaroHomeViewController.swift */; };
+		65ACE06726BF690E000B1EE4 /* Momotaro1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE06626BF690E000B1EE4 /* Momotaro1ViewController.swift */; };
 		CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */; };
 		CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */; };
 		CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032D0126ACE5AC007B0F2E /* ViewController.swift */; };
 		CE032D0526ACE5AC007B0F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0326ACE5AC007B0F2E /* Main.storyboard */; };
 		CE032D0726ACE5B0007B0F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0626ACE5B0007B0F2E /* Assets.xcassets */; };
 		CE032D0A26ACE5B0007B0F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0826ACE5B0007B0F2E /* LaunchScreen.storyboard */; };
-		CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */; };
+		CE6E8BEB26B62B11007C31F9 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E8BEA26B62B11007C31F9 /* SelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6527069E26C00FAC008E6B1F /* Momotaro2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Momotaro2ViewController.swift; sourceTree = "<group>"; };
 		65ACE06426BF5D12000B1EE4 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
-		65ACE06626BF690E000B1EE4 /* MomotaroHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomotaroHomeViewController.swift; sourceTree = "<group>"; };
+		65ACE06626BF690E000B1EE4 /* Momotaro1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Momotaro1ViewController.swift; sourceTree = "<group>"; };
 		CE032CFA26ACE5AC007B0F2E /* Kamishibai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamishibai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		CE032D0626ACE5B0007B0F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE032D0926ACE5B0007B0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE032D0B26ACE5B0007B0F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		CE6E8BEA26B62B11007C31F9 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
-				CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */,
+				CE6E8BEA26B62B11007C31F9 /* SelectViewController.swift */,
 				65ACE06426BF5D12000B1EE4 /* NaviViewController.swift */,
-				65ACE06626BF690E000B1EE4 /* MomotaroHomeViewController.swift */,
+				65ACE06626BF690E000B1EE4 /* Momotaro1ViewController.swift */,
+				6527069E26C00FAC008E6B1F /* Momotaro2ViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -154,9 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65ACE06726BF690E000B1EE4 /* MomotaroHomeViewController.swift in Sources */,
+				65ACE06726BF690E000B1EE4 /* Momotaro1ViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
-				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
+				CE6E8BEB26B62B11007C31F9 /* SelectViewController.swift in Sources */,
+				6527069F26C00FAC008E6B1F /* Momotaro2ViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
 				65ACE06526BF5D12000B1EE4 /* NaviViewController.swift in Sources */,
