@@ -11,8 +11,18 @@ class NextViewController: UIViewController {
 
 
     
-    @IBOutlet weak var momoSegue: UIImageView! {
+    @IBOutlet weak var momotaroViewSegue: UIImageView!
+    
+        
+        
+        
+        override func  viewDidLoad() {
+            super.viewDidLoad()
+        }
 
+    
+    MomoViewController.isUserInteractionEnable = true
+    MomoViewController.adGestureRecognizer(JITapGestureRecongnizer(taget: self, action: #selecter(tapped))
         // Do any additional setup after loading the view.
     }
     
