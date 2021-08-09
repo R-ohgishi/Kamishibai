@@ -9,24 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     //画面が初期化されるときに実行される関数
-    override func viewDidLoad() {
-        super.viewDidLoad()
+ //   override func viewDidLoad() {
+ //       super.viewDidLoad()
         // Do any additional setup after loading the view.
         // hashimoto 1125
-    }
-//飛田変更
+    
+  //  }
 
     
-    @IBAction func buttonAction2(_ sender:UIButton) {
-        performSegue(withIdentifier: "nextViewSegue", sender: sender)
+    @IBAction func buttonAciton(_ sender:UIButton) {
+        performSegue(withIdentifier: "mainViewSegue", sender: self)
     }
     
-    //画面のデータ受け渡し方法(今回は#3を使っています)
-    //https://qiita.com/fromage-blanc/items/3ea2dfe97d4c2d6f0646
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
+    
+
 
     
+
+
 }
-

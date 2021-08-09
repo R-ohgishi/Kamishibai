@@ -8,22 +8,25 @@
 import UIKit
 
 class SelectViewController: UIViewController {
+    
 
-    @IBOutlet weak var Momotaro1View: UIImageView!
+ 
+    @IBOutlet weak var MomotaroView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Momotaro1View.isUserInteractionEnabled = true
-                Momotaro1View.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
-            }
+        MomotaroView.isUserInteractionEnabled = true
+                MomotaroView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
         
+
         // Do any additional setup after loading the view.
+    }
+
+    @objc func tapped(){
+        performSegue(withIdentifier: "MomotaroViewSegue",sender: self)
     
-@objc func tapped(){
-    performSegue(withIdentifier: "momotaro1ViewSegue",sender: self)
-}
-
 }
 
 
+}

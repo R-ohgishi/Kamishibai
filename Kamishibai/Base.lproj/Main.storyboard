@@ -19,13 +19,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
                                 <rect key="frame" x="36" y="50" width="414" height="634"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-nB-G7u">
-                                <rect key="frame" x="129" y="687" width="174" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx4-b8-jU5">
+                                <rect key="frame" x="184" y="654" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <state key="normal" title="Touch Me!"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="buttonAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gJ-at-Gbl"/>
+                                    <action selector="buttonAciton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hu-Rf-ufQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,7 +39,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fmh-LV-ma8"/>
                     <connections>
-                        <segue destination="OPU-JT-OPD" kind="show" identifier="nextViewSegue" id="aoF-29-OXb"/>
+                        <segue destination="OPU-JT-OPD" kind="show" identifier="mainViewSegue" id="Ikq-j1-QZS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kintaro" translatesAutoresizingMaskIntoConstraints="NO" id="G8X-Bs-ztq">
-                                <rect key="frame" x="208" y="354" width="200" height="224"/>
+                                <rect key="frame" x="194" y="336" width="200" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -80,82 +79,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
                     <connections>
-                        <outlet property="Momotaro1View" destination="xIn-fJ-uxh" id="D1x-pt-yHz"/>
-                        <segue destination="1KW-bC-Imo" kind="show" identifier="momotaro1ViewSegue" id="mYH-gj-9tT"/>
+                        <outlet property="MomotaroView" destination="xIn-fJ-uxh" id="Ntb-Tx-AF9"/>
+                        <segue destination="bt8-8d-3OC" kind="show" identifier="MomotaroViewSegue" id="RiM-oM-EcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-C2-Yyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="644.92753623188412" y="93.75"/>
         </scene>
-        <!--Momotaro1 View Controller-->
-        <scene sceneID="Ckb-SO-CLl">
+        <!--View Controller-->
+        <scene sceneID="yV9-hm-Uau">
             <objects>
-                <viewController id="1KW-bC-Imo" customClass="Momotaro1ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lyA-0B-Cvz">
+                <viewController id="bt8-8d-3OC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aLi-SR-Ibk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kominka1" translatesAutoresizingMaskIntoConstraints="NO" id="c2R-qR-BHp">
-                                <rect key="frame" x="10" y="184" width="394" height="324"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="むかしむかしあるところにおじいさんとおばあさんがすんでいました" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-Mg-qRw">
-                                <rect key="frame" x="10" y="533" width="404" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-ip-Ss0">
-                                <rect key="frame" x="176" y="719" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="もんだい"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jijibaba" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-2j-Rzl">
-                                <rect key="frame" x="20" y="202" width="374" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="つぎへ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6M-dY-rXt">
-                                <rect key="frame" x="177" y="840" width="61" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ookinamomo" translatesAutoresizingMaskIntoConstraints="NO" id="U3f-ag-waB">
-                                <rect key="frame" x="112" y="757" width="191" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="EiN-cA-cQX"/>
+                        <viewLayoutGuide key="safeArea" id="ybF-dl-Sb8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7J8-Tx-E6q"/>
-                    <connections>
-                        <outlet property="Momotaro2View" destination="U3f-ag-waB" id="rJX-z6-mDd"/>
-                        <segue destination="fbO-Ng-dap" kind="show" identifier="Momotaro2ViewSegue" id="4fV-gj-Aps"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="u4d-dy-jy2"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iLJ-LR-isw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGg-PS-h9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476.8115942028987" y="93.75"/>
-        </scene>
-        <!--Momotaro2 View Controller-->
-        <scene sceneID="h6m-KK-Ntf">
-            <objects>
-                <viewController id="fbO-Ng-dap" customClass="Momotaro2ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Pj8-J0-yD1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="kWf-J6-LxQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="MN8-CY-jgT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y9y-UT-et7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2357" y="94"/>
+            <point key="canvasLocation" x="1500" y="-484"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gfz-jt-XiQ">
@@ -175,12 +121,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="jijibaba" width="393" height="400"/>
         <image name="kintaro" width="389" height="400"/>
-        <image name="kominka1" width="1200" height="900"/>
         <image name="momotaro" width="450" height="387"/>
         <image name="nigeoni" width="371" height="400"/>
-        <image name="ookinamomo" width="617" height="477"/>
         <image name="urashimataro" width="400" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
