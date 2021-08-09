@@ -9,11 +9,10 @@ import UIKit
 
 class NextViewController: UIViewController {
     
-    var segueValue  = " "
-    @IBOutlet weak var momoSegue: UIImageView!
 
-    
+    @IBOutlet weak var momoSegue: UIImageView!
     @IBOutlet weak var oniSegue: UIImageView!
+    @IBOutlet weak var kinSegue: UIImageView!
     
     
     override func viewDidLoad() {
@@ -21,23 +20,29 @@ class NextViewController: UIViewController {
         
         
         momoSegue.isUserInteractionEnabled = true
-        momoSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
-        self.segueValue = "momoSegue"
-        
+        momoSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(momo)))
         // Do any additional setup after loading the view
         oniSegue.isUserInteractionEnabled = true
-        oniSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
-        self.segueValue = "oniSegue"
+        oniSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(oni)))
+        
+        kinSegue.isUserInteractionEnabled = true
+        kinSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(kin)))
+        
     }
-
     
-    @objc func tapped(){
-        performSegue(withIdentifier: self.segueValue, sender: self)
+    
+    @objc func momo(){
+        performSegue(withIdentifier: "momoSegue", sender: self)
     }
+    @objc func oni(){
+        performSegue(withIdentifier: "oniSegue", sender: self)
+    }
+    @objc func kin(){
+        performSegue(withIdentifier: "kinSegue", sender: self)
+    }
+    
+    
 }
-
-
-
 // Do any additional setup after loading the view.
 /*
  // MARK: - Navigation

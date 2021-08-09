@@ -79,10 +79,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
                     <connections>
+                        <outlet property="kinSegue" destination="dQS-se-q3a" id="7my-hc-58r"/>
                         <outlet property="momoSegue" destination="vdT-F8-z3c" id="dxz-bj-Kvo"/>
                         <outlet property="oniSegue" destination="FvM-YQ-BBo" id="yzn-08-p4h"/>
                         <segue destination="xtp-9M-jkb" kind="show" identifier="momoSegue" id="IhK-hQ-ZWz"/>
                         <segue destination="kBS-ej-czw" kind="show" identifier="oniSegue" id="XFG-C7-9xa"/>
+                        <segue destination="iZu-Ka-T1B" kind="show" identifier="kinSegue" id="u5r-We-7fO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-C2-Yyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -96,6 +98,22 @@
                     <view key="view" contentMode="scaleToFill" id="Ovo-Uj-lGx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="MSh-Ec-hBw">
+                                <rect key="frame" x="20" y="370" width="240" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="xtq-hL-YX5">
+                                <rect key="frame" x="218" y="226" width="161" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="鬼の世界" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zq6-sm-sYj">
+                                <rect key="frame" x="111" y="158" width="164" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="q99-nN-hdQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -103,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fd-Uy-agi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="94"/>
+            <point key="canvasLocation" x="389.85507246376812" y="93.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kfA-Cn-lq9">
@@ -112,13 +130,30 @@
                     <view key="view" contentMode="scaleToFill" id="fZz-aS-5fH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="金太郎" translatesAutoresizingMaskIntoConstraints="NO" id="Fqb-pC-nYp">
+                                <rect key="frame" x="35" y="486" width="240" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="金太郎" translatesAutoresizingMaskIntoConstraints="NO" id="6nX-Qs-cgd">
+                                <rect key="frame" x="244" y="384" width="130" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金太郎の世界" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aez-26-1hD">
+                                <rect key="frame" x="108" y="248" width="199" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BbW-ak-MFC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="beg-Hb-0b6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdG-km-dhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="777"/>
+            <point key="canvasLocation" x="389.85507246376812" y="822.99107142857144"/>
         </scene>
         <!--momoViewController-->
         <scene sceneID="lWm-rn-AJN">
