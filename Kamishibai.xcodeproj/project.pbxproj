@@ -14,7 +14,8 @@
 		CE032D0726ACE5B0007B0F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0626ACE5B0007B0F2E /* Assets.xcassets */; };
 		CE032D0A26ACE5B0007B0F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE032D0826ACE5B0007B0F2E /* LaunchScreen.storyboard */; };
 		CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */; };
-		E177A70926C00B3800331434 /* MomoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177A70826C00B3800331434 /* MomoViewController.swift */; };
+		E1AC594B26C0D054007B2B40 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC594A26C0D053007B2B40 /* NaviViewController.swift */; };
+		E1AC594D26C0D38C007B2B40 /* momoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC594C26C0D38C007B2B40 /* momoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		CE032D0926ACE5B0007B0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE032D0B26ACE5B0007B0F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		E177A70826C00B3800331434 /* MomoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomoViewController.swift; sourceTree = "<group>"; };
+		E1AC594A26C0D053007B2B40 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		E1AC594C26C0D38C007B2B40 /* momoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +76,10 @@
 		CE6E8BEC26B62B7E007C31F9 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				E1AC594A26C0D053007B2B40 /* NaviViewController.swift */,
 				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
 				CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */,
-				E177A70826C00B3800331434 /* MomoViewController.swift */,
+				E1AC594C26C0D38C007B2B40 /* momoViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -151,10 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AC594D26C0D38C007B2B40 /* momoViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
 				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
-				E177A70926C00B3800331434 /* MomoViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
+				E1AC594B26C0D054007B2B40 /* NaviViewController.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

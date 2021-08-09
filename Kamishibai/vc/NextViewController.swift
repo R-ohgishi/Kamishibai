@@ -9,39 +9,44 @@ import UIKit
 
 class NextViewController: UIViewController {
     
+    var segueValue  = " "
+    @IBOutlet weak var momoSegue: UIImageView!
+
+    
+    @IBOutlet weak var oniSegue: UIImageView!
     
     
-    
-    @IBOutlet weak var momotaroViewSegue: UIImageView!
-    
-    
-    
-    override func  viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        momoSegue.isUserInteractionEnabled = true
+        momoSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
+        self.segueValue = "momoSegue"
         
-        momotaroViewSegue.isUserInteractionEnabled = true
-        momotaroViewSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
+        oniSegue.isUserInteractionEnabled = true
+        oniSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapped)))
+        self.segueValue = "oniSegue"
     }
+
     
     @objc func tapped(){
-        performSegue(withIdentifier: "momotaroViewSegue1", sender: self)
+        performSegue(withIdentifier: self.segueValue, sender: self)
     }
-    
-    
-    
-    
-    // Do any additional setup after loading the view.
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
+
+
+
+// Do any additional setup after loading the view.
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+

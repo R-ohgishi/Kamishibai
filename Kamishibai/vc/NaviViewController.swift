@@ -1,5 +1,5 @@
 //
-//  momoViewController.swift
+//  NaviViewController.swift
 //  Kamishibai
 //
 //  Created by 橋本周三 on 8/9/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class momoViewController: UIViewController {
+class NaviViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
