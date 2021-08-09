@@ -1,18 +1,23 @@
 //
-//  momoViewController.swift
+//  momo1EViewController.swift
 //  Kamishibai
 //
-//  Created by 橋本周三 on 8/9/21.
+//  Created by 飛田和彦 on 2021/08/09.
 //
 
 import UIKit
 
-class momoViewController: UIViewController {
+class momo1EViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func momo1EJAction(_ sender: Any) {
+        performSegue(withIdentifier: "momo1EJSegue", sender: sender)
     }
     
 

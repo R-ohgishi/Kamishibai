@@ -13,7 +13,7 @@ class NextViewController: UIViewController {
     @IBOutlet weak var momoSegue: UIImageView!
     @IBOutlet weak var oniSegue: UIImageView!
     @IBOutlet weak var kinSegue: UIImageView!
-    
+    @IBOutlet weak var uraSegue: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,8 @@ class NextViewController: UIViewController {
         kinSegue.isUserInteractionEnabled = true
         kinSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(kin)))
         
+        uraSegue.isUserInteractionEnabled = true
+        uraSegue.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ura)))
     }
     
     
@@ -39,6 +41,9 @@ class NextViewController: UIViewController {
     }
     @objc func kin(){
         performSegue(withIdentifier: "kinSegue", sender: self)
+    }
+    @objc func ura(){
+        performSegue(withIdentifier: "uraSegue", sender: self)
     }
     
     

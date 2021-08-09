@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652706AC26C14BFF008E6B1F /* momoJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AB26C14BFF008E6B1F /* momoJ1ViewController.swift */; };
+		652706AE26C14DB7008E6B1F /* momo1EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AD26C14DB7008E6B1F /* momo1EViewController.swift */; };
 		CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */; };
 		CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */; };
 		CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032D0126ACE5AC007B0F2E /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		652706AB26C14BFF008E6B1F /* momoJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ1ViewController.swift; sourceTree = "<group>"; };
+		652706AD26C14DB7008E6B1F /* momo1EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momo1EViewController.swift; sourceTree = "<group>"; };
 		CE032CFA26ACE5AC007B0F2E /* Kamishibai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamishibai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		652706A826C144C0008E6B1F /* Momotaro */ = {
+			isa = PBXGroup;
+			children = (
+				E1AC594C26C0D38C007B2B40 /* momoViewController.swift */,
+				652706AB26C14BFF008E6B1F /* momoJ1ViewController.swift */,
+				652706AD26C14DB7008E6B1F /* momo1EViewController.swift */,
+			);
+			path = Momotaro;
+			sourceTree = "<group>";
+		};
 		CE032CF126ACE5AC007B0F2E = {
 			isa = PBXGroup;
 			children = (
@@ -76,10 +90,10 @@
 		CE6E8BEC26B62B7E007C31F9 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				652706A826C144C0008E6B1F /* Momotaro */,
 				E1AC594A26C0D053007B2B40 /* NaviViewController.swift */,
 				CE032D0126ACE5AC007B0F2E /* ViewController.swift */,
 				CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */,
-				E1AC594C26C0D38C007B2B40 /* momoViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -156,10 +170,12 @@
 			files = (
 				E1AC594D26C0D38C007B2B40 /* momoViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
+				652706AE26C14DB7008E6B1F /* momo1EViewController.swift in Sources */,
 				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				E1AC594B26C0D054007B2B40 /* NaviViewController.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
+				652706AC26C14BFF008E6B1F /* momoJ1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

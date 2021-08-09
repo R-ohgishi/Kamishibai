@@ -15,7 +15,16 @@ class momoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func momoAction(_ sender: Any) {
+        performSegue(withIdentifier: "momo1JSegue", sender: sender)
+    
+    }
+    
+    
+    @IBAction func momoEAction(_ sender: Any) {
+        performSegue(withIdentifier: "momo1ESegue", sender: sender)
+    }
+    
     /*
     // MARK: - Navigation
 
