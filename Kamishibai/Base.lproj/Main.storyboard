@@ -268,7 +268,7 @@
             <objects>
                 <viewController id="dKv-WM-EyO" customClass="momo1EViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ORw-vF-Rim">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peach Boy English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebD-s8-02b">
@@ -335,7 +335,7 @@
             <objects>
                 <viewController id="tJr-Yj-G38" customClass="momoJ1ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SoW-cU-UjK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ももたろう　にほんご" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPC-88-TOj">
@@ -409,7 +409,7 @@
             <objects>
                 <viewController id="UMS-gR-jLH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xut-Lg-EUk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sibakari" translatesAutoresizingMaskIntoConstraints="NO" id="Ms8-jQ-yu5">
@@ -455,8 +455,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Y1A-gU-nf9"/>
-        <segue reference="qbD-Ew-umF"/>
+        <segue reference="XEh-to-Xj0"/>
+        <segue reference="rIb-Fp-jAu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="jiji" width="495" height="877"/>
