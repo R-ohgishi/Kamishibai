@@ -223,7 +223,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="えいご"/>
                                 <connections>
-                                    <action selector="momoEAction:" destination="xtp-9M-jkb" eventType="touchUpInside" id="1rB-Th-3Xv"/>
+                                    <action selector="momoEAction:" destination="xtp-9M-jkb" eventType="touchUpInside" id="t9r-Au-rkG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Japanese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5f-b5-Fag">
@@ -246,7 +246,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="にほんご"/>
                                 <connections>
-                                    <action selector="momoAction:" destination="xtp-9M-jkb" eventType="touchUpInside" id="IMl-2c-umt"/>
+                                    <action selector="momoJAction:" destination="xtp-9M-jkb" eventType="touchUpInside" id="HxM-cs-oyy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -255,18 +255,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="kR4-6c-p6u"/>
                     <connections>
-                        <segue destination="tJr-Yj-G38" kind="show" identifier="momo1JSegue" id="XEh-to-Xj0"/>
-                        <segue destination="dKv-WM-EyO" kind="show" identifier="momo1ESegue" id="rIb-Fp-jAu"/>
+                        <segue destination="tJr-Yj-G38" kind="show" identifier="momoJSegue" id="XEh-to-Xj0"/>
+                        <segue destination="dKv-WM-EyO" kind="show" identifier="momoESegue" id="rIb-Fp-jAu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNh-3t-faa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="373.91304347826087" y="-585.26785714285711"/>
         </scene>
-        <!--Momo1E View Controller-->
+        <!--MomoE1 View Controller-->
         <scene sceneID="Jjp-BB-fvc">
             <objects>
-                <viewController id="dKv-WM-EyO" customClass="momo1EViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dKv-WM-EyO" customClass="momoE1ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ORw-vF-Rim">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,22 +292,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Next"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqS-OF-JQi">
-                                <rect key="frame" x="33" y="696" width="104" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Japanese"/>
-                                <connections>
-                                    <action selector="momo1EJAction:" destination="dKv-WM-EyO" eventType="touchUpInside" id="pDO-UK-1Qn"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="にほんご" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-i6-Pki">
-                                <rect key="frame" x="34" y="732" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWo-bg-W93">
                                 <rect key="frame" x="34" y="526" width="349" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -322,9 +306,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nn8-8R-g0Q"/>
-                    <connections>
-                        <segue destination="tJr-Yj-G38" kind="show" identifier="momo1EJSegue" id="Y1A-gU-nf9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg6-mV-ob3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,61 +334,50 @@
                                 <rect key="frame" x="40" y="277" width="335" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-oU-FKa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFx-VP-eC9">
+                                <rect key="frame" x="40" y="555" width="354" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-EP-RAZ">
+                                <rect key="frame" x="20" y="766" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE1Action:" destination="tJr-Yj-G38" eventType="touchDown" id="0Ge-SW-YID"/>
+                                    <action selector="momoJ1Return:" destination="tJr-Yj-G38" eventType="touchUpInside" id="lC8-mK-1fy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAa-DM-I4H">
                                 <rect key="frame" x="299" y="766" width="76" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="つぎへ"/>
                                 <connections>
-                                    <action selector="momo2JAction:" destination="tJr-Yj-G38" eventType="touchUpInside" id="SDF-Uw-vSM"/>
-                                    <action selector="momo2JAction:" destination="SDe-u9-Pim" eventType="touchUpInside" id="fLD-Lu-cUR"/>
+                                    <action selector="momoJ1Action:" destination="tJr-Yj-G38" eventType="touchUpInside" id="ZZB-yz-dmS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBT-sE-koM">
-                                <rect key="frame" x="43" y="766" width="76" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="えいご"/>
-                                <connections>
-                                    <action selector="momo1JEAction:" destination="tJr-Yj-G38" eventType="touchUpInside" id="SDv-Qv-0ce"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-qe-nPc">
-                                <rect key="frame" x="43" y="792" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RC9-mT-Rvb">
-                                <rect key="frame" x="45" y="536" width="330" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">むかしむかし　あるところに
-おじいさんと　おばあさんが
-すんでいました</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="inS-x8-zNk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iQ2-LC-Kxq"/>
                     <connections>
-                        <segue destination="UMS-gR-jLH" kind="show" identifier="momo2JSegue" id="wuX-CB-eA9"/>
-                        <segue destination="dKv-WM-EyO" kind="show" identifier="momo1JESegue" id="qbD-Ew-umF"/>
+                        <outlet property="momoJ1Label" destination="AFx-VP-eC9" id="AG4-9I-tE9"/>
+                        <segue destination="I0b-h8-ROS" kind="show" identifier="momoJ1Segue" id="fVN-sh-owr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqd-Jn-rfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="SDe-u9-Pim" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1311.5942028985507" y="-982.36607142857133"/>
         </scene>
-        <!--View Controller-->
+        <!--MomoJ2 View Controller-->
         <scene sceneID="Esc-ns-HuE">
             <objects>
-                <viewController id="UMS-gR-jLH" sceneMemberID="viewController">
+                <viewController id="UMS-gR-jLH" customClass="momoJ2ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xut-Lg-EUk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,6 +397,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71d-yi-YpD">
+                                <rect key="frame" x="318" y="782" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ2Action:" destination="UMS-gR-jLH" eventType="touchUpInside" id="uQg-Ss-2OB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ytw-9d-UYg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -435,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6u-hM-wEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073.913043478261" y="-972.32142857142856"/>
+            <point key="canvasLocation" x="2179.7101449275365" y="-982.36607142857133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wj9-QY-9G1">
@@ -453,17 +432,394 @@
             </objects>
             <point key="canvasLocation" x="-1138" y="-629"/>
         </scene>
+        <!--MomoJ2 View Controller-->
+        <scene sceneID="Kh4-wf-IWk">
+            <objects>
+                <viewController id="I0b-h8-ROS" customClass="momoJ2ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ygt-xZ-7aJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sibakari" translatesAutoresizingMaskIntoConstraints="NO" id="d54-IM-QOI">
+                                <rect key="frame" x="20" y="126" width="374" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiji" translatesAutoresizingMaskIntoConstraints="NO" id="v2y-Wt-LX7">
+                                <rect key="frame" x="52" y="204" width="311" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-18-MgQ">
+                                <rect key="frame" x="38" y="543" width="356" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLD-0d-AkL">
+                                <rect key="frame" x="289" y="780" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ2Action:" destination="I0b-h8-ROS" eventType="touchUpInside" id="FRq-6Y-pBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLu-8a-aLn">
+                                <rect key="frame" x="20" y="780" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE2Action:" destination="I0b-h8-ROS" eventType="touchDown" id="eRs-oY-WJK"/>
+                                    <action selector="momoE3Action:" destination="hWj-Xa-plb" eventType="touchDown" id="f2T-Mn-GZt"/>
+                                    <action selector="momoJ2Return:" destination="I0b-h8-ROS" eventType="touchUpInside" id="dte-01-9df"/>
+                                    <action selector="momoJ3Return:" destination="hWj-Xa-plb" eventType="touchUpInside" id="Bn9-Eq-Gr1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l8U-fA-jId"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QyA-mk-Go5"/>
+                    <connections>
+                        <outlet property="momoJ2Label" destination="3c0-18-MgQ" id="fcw-w6-HZa"/>
+                        <segue destination="7Hz-75-lLb" kind="show" identifier="momoJ2Segue" id="dxQ-gI-7mm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LmU-Us-Y4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hWj-Xa-plb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2179.7101449275365" y="-982.36607142857133"/>
+        </scene>
+        <!--MomoJ3 View Controller-->
+        <scene sceneID="cAI-eR-JfU">
+            <objects>
+                <viewController id="7Hz-75-lLb" customClass="momoJ3ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsS-4S-omQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kawa01" translatesAutoresizingMaskIntoConstraints="NO" id="iIa-P7-lP3">
+                                <rect key="frame" x="20" y="127" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baba" translatesAutoresizingMaskIntoConstraints="NO" id="qXn-ve-iz0">
+                                <rect key="frame" x="20" y="203" width="374" height="322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csn-rX-8Ph">
+                                <rect key="frame" x="37" y="533" width="357" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-tT-xu7">
+                                <rect key="frame" x="301" y="788" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ3Action:" destination="7Hz-75-lLb" eventType="touchUpInside" id="oJz-tZ-sOs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-yh-clZ">
+                                <rect key="frame" x="20" y="788" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE3Action:" destination="7Hz-75-lLb" eventType="touchDown" id="m9M-ET-3HI"/>
+                                    <action selector="momoJ3Return:" destination="7Hz-75-lLb" eventType="touchUpInside" id="a2W-uL-PKq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QX1-qR-W8O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cUl-No-8nl"/>
+                    <connections>
+                        <outlet property="momoJ3Label" destination="csn-rX-8Ph" id="YZo-4u-3SC"/>
+                        <segue destination="490-1E-T31" kind="show" identifier="momoJ3Segue" id="YvG-Ny-MbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIa-Zl-YGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018.840579710145" y="-982.36607142857133"/>
+        </scene>
+        <!--MomoJ4 View Controller-->
+        <scene sceneID="AxU-5C-AnW">
+            <objects>
+                <viewController id="490-1E-T31" customClass="momoJ4ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJI-2R-5uK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kawa01" translatesAutoresizingMaskIntoConstraints="NO" id="fat-ma-fuT">
+                                <rect key="frame" x="20" y="132" width="374" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baba" translatesAutoresizingMaskIntoConstraints="NO" id="UMI-P6-ujF">
+                                <rect key="frame" x="-70" y="226" width="374" height="322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ookinamomo" translatesAutoresizingMaskIntoConstraints="NO" id="ivu-Db-mXd">
+                                <rect key="frame" x="185" y="371" width="209" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsQ-U9-52D">
+                                <rect key="frame" x="291" y="786" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ4Action:" destination="490-1E-T31" eventType="touchUpInside" id="oYf-KX-CIm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-U1-N49">
+                                <rect key="frame" x="40" y="566" width="327" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRB-el-bWV">
+                                <rect key="frame" x="20" y="786" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE4Action:" destination="490-1E-T31" eventType="touchDown" id="J5C-UV-y4Z"/>
+                                    <action selector="momoJ4Return:" destination="490-1E-T31" eventType="touchUpInside" id="OAg-qO-v0c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yPh-3F-uay"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cWE-Kz-kya"/>
+                    <connections>
+                        <outlet property="momoJ4Label" destination="rT3-U1-N49" id="meN-f1-7CN"/>
+                        <segue destination="WeN-ih-4QV" kind="show" identifier="momoJ4Segue" id="hwP-jy-lVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irK-zJ-L2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3869.5652173913045" y="-982.36607142857133"/>
+        </scene>
+        <!--MomoJ5 View Controller-->
+        <scene sceneID="RLx-Li-bUb">
+            <objects>
+                <viewController id="WeN-ih-4QV" customClass="momoJ5ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HiY-KN-YvH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kominka1" translatesAutoresizingMaskIntoConstraints="NO" id="ll6-lD-64j">
+                                <rect key="frame" x="20" y="142" width="374" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baba" translatesAutoresizingMaskIntoConstraints="NO" id="cLW-y1-YyF">
+                                <rect key="frame" x="-52" y="230" width="374" height="322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ookinamomo" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-X0-vcU">
+                                <rect key="frame" x="185" y="379" width="209" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKK-u0-q9Y">
+                                <rect key="frame" x="318" y="782" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ5Action:" destination="WeN-ih-4QV" eventType="touchUpInside" id="TlR-OG-8Vs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF1-wi-KOj">
+                                <rect key="frame" x="39" y="560" width="323" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rK-ff-ekK">
+                                <rect key="frame" x="20" y="782" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE5Action:" destination="WeN-ih-4QV" eventType="touchDown" id="6VU-gE-HIA"/>
+                                    <action selector="momoJ5Return:" destination="WeN-ih-4QV" eventType="touchUpInside" id="lv0-Jo-ukR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s5m-JZ-NN3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jh6-zf-5a7"/>
+                    <connections>
+                        <outlet property="momoJ5Label" destination="xF1-wi-KOj" id="3jD-bl-MYq"/>
+                        <segue destination="Yef-mX-GbC" kind="show" identifier="momoJ5Segue" id="sI8-ZN-3Fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjr-Cj-Q3i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4695.652173913044" y="-982.36607142857133"/>
+        </scene>
+        <!--MomoJ6 View Controller-->
+        <scene sceneID="2zT-1m-6Ci">
+            <objects>
+                <viewController id="Yef-mX-GbC" customClass="momoJ6ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="stO-Hh-FOm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ookinamomo" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-3U-20M">
+                                <rect key="frame" x="164" y="323" width="250" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="QEh-zy-zXl">
+                                <rect key="frame" x="20" y="128" width="374" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78m-KI-Cjf">
+                                <rect key="frame" x="287" y="778" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ6Action:" destination="Yef-mX-GbC" eventType="touchUpInside" id="I6A-Uv-2Xw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-HC-lFz">
+                                <rect key="frame" x="37" y="496" width="326" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CX0-cO-Sgs">
+                                <rect key="frame" x="20" y="778" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE6Action:" destination="Yef-mX-GbC" eventType="touchDown" id="P1u-vp-gKS"/>
+                                    <action selector="momoJ6Return:" destination="Yef-mX-GbC" eventType="touchUpInside" id="vhC-vs-pKG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bdf-XW-rRj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cI7-Gp-g3G"/>
+                    <connections>
+                        <outlet property="momoJ6Label" destination="CFg-HC-lFz" id="SRr-0R-8a4"/>
+                        <segue destination="E6p-jp-ziM" kind="show" identifier="momoJ6Segue" id="XYs-Z0-BEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDp-dr-7nt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5498.5507246376819" y="-982.36607142857133"/>
+        </scene>
+        <!--MomoJ7 View Controller-->
+        <scene sceneID="XXp-sX-XtM">
+            <objects>
+                <viewController id="E6p-jp-ziM" customClass="momoJ7ViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5r3-cv-sEs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jijibaba" translatesAutoresizingMaskIntoConstraints="NO" id="C6S-BR-HcO">
+                                <rect key="frame" x="0.0" y="127" width="427" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="k7d-op-6CS">
+                                <rect key="frame" x="82" y="332" width="262" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDI-Vy-VtB">
+                                <rect key="frame" x="310" y="794" width="76" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="つぎへ"/>
+                                <connections>
+                                    <action selector="momoJ7Action:" destination="E6p-jp-ziM" eventType="touchUpInside" id="CAD-wp-K9W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et3-NP-hx0">
+                                <rect key="frame" x="49" y="544" width="345" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvl-HW-A9o">
+                                <rect key="frame" x="20" y="794" width="152" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="えいごボタン"/>
+                                <connections>
+                                    <action selector="momoE7Action:" destination="E6p-jp-ziM" eventType="touchDown" id="MRG-T1-5aQ"/>
+                                    <action selector="momoJ7Return:" destination="E6p-jp-ziM" eventType="touchUpInside" id="h6a-Ly-Ms4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UHn-1F-j3i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmF-er-gPI"/>
+                    <connections>
+                        <outlet property="momoJ7Label" destination="Et3-NP-hx0" id="yJw-yC-AZM"/>
+                        <segue destination="mUh-bL-FfU" kind="show" identifier="momoJ7Segue" id="SoH-ZW-ntQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jea-EJ-CL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6292.753623188406" y="-982.36607142857133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z2c-fe-L6b">
+            <objects>
+                <viewController id="mUh-bL-FfU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TzN-cL-rEH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="momotaro_solo" translatesAutoresizingMaskIntoConstraints="NO" id="W8Z-aB-eXe">
+                                <rect key="frame" x="10" y="115" width="394" height="403"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ももたろうは　みるみるうちに　大きく　つよいおとこのこに　そだちました" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xB-Kb-M16">
+                                <rect key="frame" x="29" y="526" width="365" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mst-FK-Qhd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LOj-31-FmP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0Y-O4-jGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7089.8550724637689" y="-982.36607142857133"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="XEh-to-Xj0"/>
-        <segue reference="rIb-Fp-jAu"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="baba" width="495" height="877"/>
+        <image name="baby" width="571" height="576"/>
         <image name="jiji" width="495" height="877"/>
         <image name="jijibaba" width="393" height="400"/>
+        <image name="kawa01" width="640" height="480"/>
         <image name="kominka1" width="1200" height="900"/>
         <image name="momotaro" width="450" height="387"/>
+        <image name="momotaro_solo" width="756" height="800"/>
         <image name="nigeoni" width="371" height="400"/>
+        <image name="ookinamomo" width="617" height="477"/>
         <image name="sibakari" width="512" height="341"/>
         <image name="urashimataro" width="400" height="400"/>
         <image name="金太郎" width="433" height="450"/>

@@ -1,5 +1,5 @@
 //
-//  momo1EViewController.swift
+//  momoE1ViewController.swift
 //  Kamishibai
 //
 //  Created by 飛田和彦 on 2021/08/09.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class momo1EViewController: UIViewController {
+class momoE1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,10 +15,7 @@ class momo1EViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func momo1EJAction(_ sender: Any) {
-        performSegue(withIdentifier: "momo1EJSegue", sender: sender)
-    }
+
     
 
     /*

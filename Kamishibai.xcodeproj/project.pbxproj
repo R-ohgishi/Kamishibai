@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		652706AC26C14BFF008E6B1F /* momoJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AB26C14BFF008E6B1F /* momoJ1ViewController.swift */; };
-		652706AE26C14DB7008E6B1F /* momo1EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AD26C14DB7008E6B1F /* momo1EViewController.swift */; };
-		652706B026C15DC8008E6B1F /* momo2JViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AF26C15DC8008E6B1F /* momo2JViewController.swift */; };
+		652706AE26C14DB7008E6B1F /* momoE1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AD26C14DB7008E6B1F /* momoE1ViewController.swift */; };
+		652706B026C15DC8008E6B1F /* momoJ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706AF26C15DC8008E6B1F /* momoJ2ViewController.swift */; };
+		652706B226C786F4008E6B1F /* momoJ3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706B126C786F4008E6B1F /* momoJ3ViewController.swift */; };
+		652706B426C7B8DA008E6B1F /* momoJ4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706B326C7B8DA008E6B1F /* momoJ4ViewController.swift */; };
+		652706B626C7BD0A008E6B1F /* momoJ5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706B526C7BD0A008E6B1F /* momoJ5ViewController.swift */; };
+		652706B826C7DA59008E6B1F /* momoJ6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706B726C7DA59008E6B1F /* momoJ6ViewController.swift */; };
+		652706BA26C7DC08008E6B1F /* momoJ7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652706B926C7DC08008E6B1F /* momoJ7ViewController.swift */; };
 		CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */; };
 		CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */; };
 		CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE032D0126ACE5AC007B0F2E /* ViewController.swift */; };
@@ -23,8 +28,13 @@
 
 /* Begin PBXFileReference section */
 		652706AB26C14BFF008E6B1F /* momoJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ1ViewController.swift; sourceTree = "<group>"; };
-		652706AD26C14DB7008E6B1F /* momo1EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momo1EViewController.swift; sourceTree = "<group>"; };
-		652706AF26C15DC8008E6B1F /* momo2JViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momo2JViewController.swift; sourceTree = "<group>"; };
+		652706AD26C14DB7008E6B1F /* momoE1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoE1ViewController.swift; sourceTree = "<group>"; };
+		652706AF26C15DC8008E6B1F /* momoJ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ2ViewController.swift; sourceTree = "<group>"; };
+		652706B126C786F4008E6B1F /* momoJ3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ3ViewController.swift; sourceTree = "<group>"; };
+		652706B326C7B8DA008E6B1F /* momoJ4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ4ViewController.swift; sourceTree = "<group>"; };
+		652706B526C7BD0A008E6B1F /* momoJ5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ5ViewController.swift; sourceTree = "<group>"; };
+		652706B726C7DA59008E6B1F /* momoJ6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ6ViewController.swift; sourceTree = "<group>"; };
+		652706B926C7DC08008E6B1F /* momoJ7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = momoJ7ViewController.swift; sourceTree = "<group>"; };
 		CE032CFA26ACE5AC007B0F2E /* Kamishibai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamishibai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +64,13 @@
 			children = (
 				E1AC594C26C0D38C007B2B40 /* momoViewController.swift */,
 				652706AB26C14BFF008E6B1F /* momoJ1ViewController.swift */,
-				652706AD26C14DB7008E6B1F /* momo1EViewController.swift */,
-				652706AF26C15DC8008E6B1F /* momo2JViewController.swift */,
+				652706AF26C15DC8008E6B1F /* momoJ2ViewController.swift */,
+				652706B126C786F4008E6B1F /* momoJ3ViewController.swift */,
+				652706B326C7B8DA008E6B1F /* momoJ4ViewController.swift */,
+				652706B526C7BD0A008E6B1F /* momoJ5ViewController.swift */,
+				652706B726C7DA59008E6B1F /* momoJ6ViewController.swift */,
+				652706B926C7DC08008E6B1F /* momoJ7ViewController.swift */,
+				652706AD26C14DB7008E6B1F /* momoE1ViewController.swift */,
 			);
 			path = Momotaro;
 			sourceTree = "<group>";
@@ -173,13 +188,18 @@
 			files = (
 				E1AC594D26C0D38C007B2B40 /* momoViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
-				652706AE26C14DB7008E6B1F /* momo1EViewController.swift in Sources */,
+				652706AE26C14DB7008E6B1F /* momoE1ViewController.swift in Sources */,
+				652706B826C7DA59008E6B1F /* momoJ6ViewController.swift in Sources */,
 				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
-				652706B026C15DC8008E6B1F /* momo2JViewController.swift in Sources */,
+				652706B026C15DC8008E6B1F /* momoJ2ViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				E1AC594B26C0D054007B2B40 /* NaviViewController.swift in Sources */,
+				652706B626C7BD0A008E6B1F /* momoJ5ViewController.swift in Sources */,
+				652706B426C7B8DA008E6B1F /* momoJ4ViewController.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
 				652706AC26C14BFF008E6B1F /* momoJ1ViewController.swift in Sources */,
+				652706B226C786F4008E6B1F /* momoJ3ViewController.swift in Sources */,
+				652706BA26C7DC08008E6B1F /* momoJ7ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

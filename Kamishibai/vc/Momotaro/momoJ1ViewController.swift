@@ -9,20 +9,32 @@ import UIKit
 
 class momoJ1ViewController: UIViewController {
 
+ 
+    @IBOutlet weak var momoJ1Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+   
+        momoJ1Label.text = "むかしむかしあるところにおじいさんと　おばあさんが すんでいました"
+    
     }
     
-    @IBAction func momo2JAction(_ sender: Any) {
-        performSegue(withIdentifier: "momo2JSegue", sender: sender)
+    
+    @IBAction func momoE1Action(_ sender: Any) {
+        momoJ1Label.text = "Long long ago,there lived an old couple in a small village."
     }
     
     
-    @IBAction func momo1JEAction(_ sender: Any) {
-        performSegue(withIdentifier: "momo1JESegue", sender: sender)
+    @IBAction func momoJ1Return(_ sender: Any) {
+        momoJ1Label.text = "むかしむかしあるところにおじいさんと　おばあさんが すんでいました"
+        
+        
+    }
     
+    @IBAction func momoJ1Action(_ sender: Any) {
+        performSegue(withIdentifier: "momoJ1Segue", sender: sender)
     }
     
     /*
