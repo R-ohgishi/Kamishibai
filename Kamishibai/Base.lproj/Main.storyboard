@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,9 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-ul-Clq">
-                                <rect key="frame" x="119" y="418" width="177" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q8i-fh-F8i" secondAttribute="height" multiplier="207:200" id="A0P-hZ-J18"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-ul-Clq">
+                                <rect key="frame" x="118.5" y="418" width="177" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Touch me!"/>
                                 <connections>
@@ -27,17 +33,15 @@
                                     <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Ka8-Ma-imN"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nigeoni" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-fh-F8i">
-                                <rect key="frame" x="0.0" y="130" width="414" height="634"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q8i-fh-F8i" secondAttribute="bottom" constant="98" id="9Ca-Wu-dpr"/>
+                            <constraint firstItem="dKy-ul-Clq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1YM-XE-4dg"/>
+                            <constraint firstItem="dKy-ul-Clq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="97F-eY-CfZ"/>
+                            <constraint firstItem="Q8i-fh-F8i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E62-to-kHo"/>
                             <constraint firstItem="Q8i-fh-F8i" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GgY-qg-zmR"/>
                             <constraint firstItem="Q8i-fh-F8i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ObI-rT-q0N"/>
-                            <constraint firstItem="Q8i-fh-F8i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="oqS-ve-rr3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fmh-LV-ma8"/>
@@ -73,18 +77,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="momotaro" translatesAutoresizingMaskIntoConstraints="NO" id="wnN-vh-gy1">
-                                <rect key="frame" x="20" y="214" width="172" height="278"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kintaro" translatesAutoresizingMaskIntoConstraints="NO" id="Qtz-mO-DfC">
-                                <rect key="frame" x="200" y="214" width="194" height="278"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="urashimataro" translatesAutoresizingMaskIntoConstraints="NO" id="sQb-y6-cJM">
-                                <rect key="frame" x="87" y="520" width="240" height="266"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Jb-7X-3Fn">
+                                <rect key="frame" x="0.0" y="188" width="414" height="708"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="8qB-vO-IzJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="momotaro" translatesAutoresizingMaskIntoConstraints="NO" id="wnN-vh-gy1">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="508"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="6cw-Er-Dpf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kintaro" translatesAutoresizingMaskIntoConstraints="NO" id="Qtz-mO-DfC">
+                                                <rect key="frame" x="209" y="0.0" width="205" height="508"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="urashimataro" translatesAutoresizingMaskIntoConstraints="NO" id="sQb-y6-cJM">
+                                        <rect key="frame" x="107" y="508" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="7Cg-J1-cZB"/>
+                                            <constraint firstAttribute="height" constant="200" id="odt-jD-FNQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="おはなしをえらんでね" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lp-DA-jFP">
                                 <rect key="frame" x="20" y="155" width="174" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,6 +113,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1oK-ib-wwG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Jb-7X-3Fn" firstAttribute="top" secondItem="1oK-ib-wwG" secondAttribute="top" constant="100" id="2L7-h4-yk2"/>
+                            <constraint firstAttribute="trailing" secondItem="8Jb-7X-3Fn" secondAttribute="trailing" id="R6d-41-eg8"/>
+                            <constraint firstAttribute="bottom" secondItem="8Jb-7X-3Fn" secondAttribute="bottom" id="VvA-Qm-6DC"/>
+                            <constraint firstItem="8Jb-7X-3Fn" firstAttribute="leading" secondItem="1oK-ib-wwG" secondAttribute="leading" id="tXb-eb-kDJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2yq-pD-v7l"/>
                     <connections>
@@ -114,52 +138,155 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kominka1" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-9n-8la">
-                                <rect key="frame" x="0.0" y="180" width="414" height="361"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl9-k1-g9W">
-                                <rect key="frame" x="0.0" y="595" width="414" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">むかしむかしあるところにおじいさんとおばあさん
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BVB-GI-mB4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjR-f3-FDA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kominka1" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-9n-8la">
+                                                <rect key="frame" x="0.0" y="62" width="414" height="328"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="EFE-9n-8la" secondAttribute="height" multiplier="207:164" id="GPL-Ma-YlO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jijibaba" translatesAutoresizingMaskIntoConstraints="NO" id="lfK-Ho-T9L">
+                                                <rect key="frame" x="30" y="62" width="345" height="328"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lfK-Ho-T9L" secondAttribute="height" multiplier="345:328" id="CGR-Wx-gk4"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="EFE-9n-8la" secondAttribute="trailing" id="7j2-oW-jBU"/>
+                                            <constraint firstItem="EFE-9n-8la" firstAttribute="top" secondItem="wjR-f3-FDA" secondAttribute="top" constant="62" id="A3c-gF-q1n"/>
+                                            <constraint firstItem="lfK-Ho-T9L" firstAttribute="top" secondItem="wjR-f3-FDA" secondAttribute="top" constant="62" id="MlT-NW-dpg"/>
+                                            <constraint firstItem="EFE-9n-8la" firstAttribute="leading" secondItem="wjR-f3-FDA" secondAttribute="leading" id="PRe-7D-BjG"/>
+                                            <constraint firstItem="lfK-Ho-T9L" firstAttribute="leading" secondItem="wjR-f3-FDA" secondAttribute="leading" constant="30" id="f3P-dS-JGx"/>
+                                            <constraint firstAttribute="trailing" secondItem="lfK-Ho-T9L" secondAttribute="trailing" constant="39" id="qbx-6J-ThL"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl9-k1-g9W">
+                                        <rect key="frame" x="8" y="400" width="398.5" height="41"/>
+                                        <string key="text">むかしむかしあるところにおじいさんとおばあさん
 がすんでいました</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt1-fy-yRu">
-                                <rect key="frame" x="176" y="737" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="もんだい"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_momo" translatesAutoresizingMaskIntoConstraints="NO" id="eem-Ee-3ji">
-                                <rect key="frame" x="158" y="804" width="97" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jijibaba" translatesAutoresizingMaskIntoConstraints="NO" id="lfK-Ho-T9L">
-                                <rect key="frame" x="0.0" y="206" width="414" height="312"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="つぎへ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eip-Ds-3gI">
-                                <rect key="frame" x="181" y="841" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt1-fy-yRu">
+                                        <rect key="frame" x="176" y="451" width="62" height="268.5"/>
+                                        <state key="normal" title="もんだい"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_momo" translatesAutoresizingMaskIntoConstraints="NO" id="eem-Ee-3ji">
+                                        <rect key="frame" x="183" y="729.5" width="48" height="48"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="つぎへ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eip-Ds-3gI">
+                                        <rect key="frame" x="181" y="787.5" width="52" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wjR-f3-FDA" firstAttribute="top" secondItem="BVB-GI-mB4" secondAttribute="top" id="0rs-LF-yqq"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YRF-fs-HyH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BVB-GI-mB4" secondAttribute="bottom" id="FaX-Re-zLl"/>
+                            <constraint firstItem="BVB-GI-mB4" firstAttribute="leading" secondItem="gBG-jd-aqa" secondAttribute="leading" id="WQ3-E5-gw8"/>
+                            <constraint firstItem="BVB-GI-mB4" firstAttribute="top" secondItem="YRF-fs-HyH" secondAttribute="top" id="ayj-Iq-S2W"/>
+                            <constraint firstAttribute="trailing" secondItem="BVB-GI-mB4" secondAttribute="trailing" id="qxA-Kb-maX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="n31-Ue-Yus"/>
                     <connections>
                         <outlet property="momo" destination="eem-Ee-3ji" id="oIE-oJ-Ytf"/>
-                        <segue destination="fsA-GN-Fta" kind="show" identifier="kamishibaiViewSegue" id="sz7-aL-oLV"/>
+                        <segue destination="Wco-Ze-4Ym" kind="show" identifier="kamishibaiViewSegue" id="Oty-Fm-2Fz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7w-11-d0L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1491.304347826087" y="93.75"/>
+        </scene>
+        <!--Kamishibai View Controller-->
+        <scene sceneID="Dit-77-WcC">
+            <objects>
+                <viewController id="Wco-Ze-4Ym" customClass="KamishibaiViewController" customModule="Kamishibai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y22-9Q-ujY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="n4z-zV-bmJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="21W-qu-M10">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JA9-lk-rd0">
+                                            <size key="itemSize" width="413" height="460"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VXc-JI-frD" customClass="CollectionViewCell" customModule="Kamishibai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="7" width="413" height="460"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hn1-2A-XOh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="460"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="413" height="460"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Wco-Ze-4Ym" id="Ibm-Py-nV0"/>
+                                            <outlet property="delegate" destination="Wco-Ze-4Ym" id="qOj-AF-hMr"/>
+                                        </connections>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お題" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSw-42-t1U">
+                                        <rect key="frame" x="20" y="574" width="374" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="9XY-IQ-bU9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="21W-qu-M10" firstAttribute="leading" secondItem="n4z-zV-bmJ" secondAttribute="leading" id="FiN-do-ATk"/>
+                                    <constraint firstAttribute="trailing" secondItem="fSw-42-t1U" secondAttribute="trailing" constant="20" id="kal-t9-0NA"/>
+                                    <constraint firstItem="fSw-42-t1U" firstAttribute="leading" secondItem="n4z-zV-bmJ" secondAttribute="leading" constant="20" id="kuU-Ii-lPj"/>
+                                    <constraint firstAttribute="trailing" secondItem="21W-qu-M10" secondAttribute="trailing" id="pag-Gt-Rnk"/>
+                                    <constraint firstAttribute="bottom" secondItem="fSw-42-t1U" secondAttribute="bottom" id="t1U-Ce-CJZ"/>
+                                    <constraint firstItem="21W-qu-M10" firstAttribute="top" secondItem="n4z-zV-bmJ" secondAttribute="top" id="vbC-ia-PJK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2qN-8i-eMY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n4z-zV-bmJ" firstAttribute="trailing" secondItem="2qN-8i-eMY" secondAttribute="trailing" id="3Lp-78-r1A"/>
+                            <constraint firstItem="n4z-zV-bmJ" firstAttribute="top" secondItem="2qN-8i-eMY" secondAttribute="top" id="SZn-eE-dkt"/>
+                            <constraint firstItem="n4z-zV-bmJ" firstAttribute="leading" secondItem="2qN-8i-eMY" secondAttribute="leading" id="uuZ-g5-WDQ"/>
+                            <constraint firstItem="2qN-8i-eMY" firstAttribute="bottom" secondItem="n4z-zV-bmJ" secondAttribute="bottom" id="wTS-Ux-rzJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cKT-cZ-vxU"/>
+                    <connections>
+                        <outlet property="collectionView" destination="21W-qu-M10" id="BmL-Nj-3l6"/>
+                        <outlet property="story" destination="fSw-42-t1U" id="5Sp-yy-dGX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEJ-jQ-D7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2355.072463768116" y="-567.1875"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="oun-XS-yhU">

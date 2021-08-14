@@ -16,6 +16,9 @@
 		CE4E3A9F26BF5CF2004162C1 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E3A9E26BF5CF2004162C1 /* NaviViewController.swift */; };
 		CE4E3AA126BF68E8004162C1 /* MomotaroHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E3AA026BF68E8004162C1 /* MomotaroHomeViewController.swift */; };
 		CE4E3AA326BF6DF9004162C1 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E3AA226BF6DF9004162C1 /* StoryViewController.swift */; };
+		CE63E69F26C72D0B00CA4389 /* KamishibaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63E69E26C72D0B00CA4389 /* KamishibaiViewController.swift */; };
+		CE63E6A326C7314A00CA4389 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63E6A126C7314A00CA4389 /* CollectionViewCell.swift */; };
+		CE63E6A426C7314A00CA4389 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE63E6A226C7314A00CA4389 /* CollectionViewCell.xib */; };
 		CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		CE4E3A9E26BF5CF2004162C1 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
 		CE4E3AA026BF68E8004162C1 /* MomotaroHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomotaroHomeViewController.swift; sourceTree = "<group>"; };
 		CE4E3AA226BF6DF9004162C1 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		CE63E69E26C72D0B00CA4389 /* KamishibaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamishibaiViewController.swift; sourceTree = "<group>"; };
+		CE63E6A126C7314A00CA4389 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE63E6A226C7314A00CA4389 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		CE6E8BEA26B62B11007C31F9 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6E8BEC26B62B7E007C31F9 /* vc */,
+				CE63E6A026C7312300CA4389 /* xib */,
 				CE032CFD26ACE5AC007B0F2E /* AppDelegate.swift */,
 				CE032CFF26ACE5AC007B0F2E /* SceneDelegate.swift */,
 				CE032D0326ACE5AC007B0F2E /* Main.storyboard */,
@@ -75,6 +82,15 @@
 			path = Kamishibai;
 			sourceTree = "<group>";
 		};
+		CE63E6A026C7312300CA4389 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				CE63E6A126C7314A00CA4389 /* CollectionViewCell.swift */,
+				CE63E6A226C7314A00CA4389 /* CollectionViewCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
 		CE6E8BEC26B62B7E007C31F9 /* vc */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,7 @@
 				CE4E3A9E26BF5CF2004162C1 /* NaviViewController.swift */,
 				CE4E3AA026BF68E8004162C1 /* MomotaroHomeViewController.swift */,
 				CE4E3AA226BF6DF9004162C1 /* StoryViewController.swift */,
+				CE63E69E26C72D0B00CA4389 /* KamishibaiViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 			files = (
 				CE032D0A26ACE5B0007B0F2E /* LaunchScreen.storyboard in Resources */,
 				CE032D0726ACE5B0007B0F2E /* Assets.xcassets in Resources */,
+				CE63E6A426C7314A00CA4389 /* CollectionViewCell.xib in Resources */,
 				CE032D0526ACE5AC007B0F2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +177,8 @@
 			files = (
 				CE4E3AA126BF68E8004162C1 /* MomotaroHomeViewController.swift in Sources */,
 				CE032D0226ACE5AC007B0F2E /* ViewController.swift in Sources */,
+				CE63E6A326C7314A00CA4389 /* CollectionViewCell.swift in Sources */,
+				CE63E69F26C72D0B00CA4389 /* KamishibaiViewController.swift in Sources */,
 				CE6E8BEB26B62B11007C31F9 /* NextViewController.swift in Sources */,
 				CE032CFE26ACE5AC007B0F2E /* AppDelegate.swift in Sources */,
 				CE032D0026ACE5AC007B0F2E /* SceneDelegate.swift in Sources */,
