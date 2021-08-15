@@ -19,6 +19,9 @@ class momoJ8ViewController: UIViewController {
     
     }
     
+    @IBAction func momoE8Action(_ sender: Any) {
+        
+    }
     
 
     /*
